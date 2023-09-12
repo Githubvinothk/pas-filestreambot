@@ -22,7 +22,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n If You don't know check the MY_PASS Variable in heroku \n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 𝚋𝚘𝚝 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 𝙿𝙼 𝚏𝚘𝚛 𝚙𝚊𝚜𝚜𝚠𝚘𝚛𝚍 👉 @dhanusha_3.\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen.Message(filters.text, id=filters.chat(m.chat.id), timeout=90)
             if _text.text:
                 textp = _text.text
@@ -65,7 +65,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ [Adarsh Goel](https://github.com/adarsh-goel) ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ [TDM Admin](https://t.me/Sagastae) ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     
                     disable_web_page_preview=True
                 )
@@ -88,7 +88,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [Adarsh Goel](https://github.com/adarsh-goel)",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [TDM Admin](https://t.me/Sagastae)",
                 
                 disable_web_page_preview=True)
             return
